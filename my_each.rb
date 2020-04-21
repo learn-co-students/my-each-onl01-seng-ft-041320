@@ -1,9 +1,10 @@
-words=[]
-def my_each(words)
-  words.map do |word| 
-  return word
+def my_each(array)
+  i = 0
+  while i < array.length
+    yield(array[i])
+    i += 1
   end
-  words
+  array
 end
 
 
